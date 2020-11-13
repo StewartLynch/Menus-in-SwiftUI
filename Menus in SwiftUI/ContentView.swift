@@ -47,15 +47,14 @@ struct ContentView: View {
                                 .background(
                                     RoundedRectangle(cornerRadius: 5)
                                         .fill(Color(UIColor.secondaryLabel))
-
                                 )
                             }
-                        }.buttonStyle(PlainButtonStyle())
+                        }
+                        .buttonStyle(PlainButtonStyle())
                     }
                 }
                 .listStyle(InsetGroupedListStyle())
                 .navigationTitle("Food Intake")
-
                 .padding(.vertical)
             }
             .fullScreenCover(item: $selectedFood) { selectedFood in
